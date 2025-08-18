@@ -8,7 +8,7 @@ export default function Navbar() {
   const navItems = ["Home", "About Us", "Services", "Projects", "Contact Us"];
 
   return (
-    <nav className="bg-black shadow-md fixed top-0 left-0 w-full z-50">
+    <nav className="shadow-md fixed top-0 left-0 w-full z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="text-green-400 font-bold text-2xl drop-shadow-[0_0_8px_#22c55e]">
@@ -52,7 +52,7 @@ export default function Navbar() {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
-          className="md:hidden bg-black px-6 pb-4 flex flex-col gap-4"
+          className="md:hidden px-6 pb-4 flex flex-col gap-4"
         >
           {navItems.map((item) => (
             <motion.a
