@@ -21,7 +21,7 @@ export default function Navbar() {
             <motion.a
               key={item}
               href={`#${item.toLowerCase()}`}
-              className="relative text-green-400 font-medium"
+              className="relative text-white font-medium"
               whileHover={{ scale: 1.1 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
@@ -58,7 +58,7 @@ export default function Navbar() {
             <motion.a
               key={item}
               href={`#${item.toLowerCase()}`}
-              className="text-green-400 font-medium"
+              className="text-white font-medium"
               whileHover={{ scale: 1.1, color: "#22c55e" }}
               transition={{ type: "spring", stiffness: 300 }}
               onClick={() => setIsOpen(false)}

@@ -20,8 +20,12 @@ export default function LeoClub() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8, delay: 0.2 }}
-        whileHover={{ scale: 1.05, boxShadow: "0px 0px 20px #39FF14" }}
-        className="bg-zinc-900 rounded-2xl p-6 shadow-lg border border-neon-green mb-6 cursor-pointer"
+        whileHover={{
+          scale: 1.05,
+          boxShadow: "0px 0px 25px rgba(0, 140, 255, 0.8)",
+          background: "linear-gradient(135deg, #1e3a8a, #3b82f6, #60a5fa)",
+        }}
+        className="bg-zinc-900 rounded-2xl p-6 shadow-lg border border-blue-500 mb-6 cursor-pointer transition-all duration-300"
       >
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
@@ -49,8 +53,12 @@ export default function LeoClub() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          whileHover={{ scale: 1.05, boxShadow: "0px 0px 20px #39FF14" }}
-          className="bg-zinc-900 rounded-2xl p-6 shadow-lg border border-neon-green cursor-pointer"
+          whileHover={{
+            scale: 1.05,
+            boxShadow: "0px 0px 25px rgba(0, 140, 255, 0.8)",
+            background: "linear-gradient(135deg, #1e3a8a, #3b82f6, #60a5fa)",
+          }}
+          className="bg-zinc-900 rounded-2xl p-6 shadow-lg border border-blue-500 cursor-pointer transition-all duration-300"
         >
           <motion.h3
             initial={{ opacity: 0, y: -20 }}
@@ -72,8 +80,12 @@ export default function LeoClub() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          whileHover={{ scale: 1.05, boxShadow: "0px 0px 20px #39FF14" }}
-          className="bg-zinc-900 rounded-2xl p-6 shadow-lg border border-neon-green cursor-pointer"
+          whileHover={{
+            scale: 1.05,
+            boxShadow: "0px 0px 25px rgba(0, 140, 255, 0.8)",
+            background: "linear-gradient(135deg, #1e3a8a, #3b82f6, #60a5fa)",
+          }}
+          className="bg-zinc-900 rounded-2xl p-6 shadow-lg border border-blue-500 cursor-pointer transition-all duration-300"
         >
           <motion.h3
             initial={{ opacity: 0, y: -20 }}

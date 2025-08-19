@@ -3,6 +3,7 @@ import Loading from "./components/Loading";
 import Navbar from "./sections/Navbar";
 import HeroSection from "./sections/HeroSection";
 import LeoClub from "./sections/Leoclub";
+import LegacySection from "./sections/LegacySection";
 
 
 function App() {
@@ -29,7 +30,7 @@ function App() {
       <Navbar />
       <HeroSection />
       <LeoClub />
-      
+      <LegacySection />
     </>
   );
 }
