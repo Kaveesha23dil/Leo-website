@@ -46,12 +46,22 @@ export default function HeroSection() {
       className="relative h-screen w-full bg-cover bg-center"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
-      {/* Typing effect at the bottom */}
+      {/* Static Welcome Text */}
+      <div className="absolute bottom-20 w-full text-center">
+        <h1 className="text-3xl md:text-5xl font-bold">
+          <span className="text-white">Welcome to </span>
+          <span className="text-green-400 drop-shadow-[0_0_10px_#22c55e]">
+            LEO Club
+          </span>
+        </h1>
+      </div>
+
+      {/* Typing effect below */}
       <div className="absolute bottom-10 w-full text-center">
-        <h1 className="text-white text-2xl md:text-4xl font-bold max-w-4xl mx-auto px-4">
+        <h2 className="text-white text-xl md:text-3xl font-semibold max-w-4xl mx-auto px-4">
           {currentText}
           <span className="animate-blink">|</span>
-        </h1>
+        </h2>
       </div>
 
       {/* Blink animation */}

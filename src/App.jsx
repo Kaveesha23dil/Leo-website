@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Loading from "./components/Loading";
 import Navbar from "./sections/Navbar";
 import HeroSection from "./sections/HeroSection";
+import LeoClub from "./sections/Leoclub";
+
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -26,6 +28,8 @@ function App() {
     <>
       <Navbar />
       <HeroSection />
+      <LeoClub />
+      
     </>
   );
 }
