@@ -5,6 +5,9 @@ import HeroSection from "./sections/HeroSection";
 import LeoClub from "./sections/Leoclub";
 import LegacySection from "./sections/LegacySection";
 import StatsSection from "./sections/StatsSection";
+import SplashCursor from "./sections/SplashCursor";
+import LeadershipSection from "./sections/LeadershipSection";
+import LatestProjects from "./sections/LatestProjects";
 
 
 function App() {
@@ -33,6 +36,9 @@ function App() {
       <LeoClub />
       <LegacySection />
       <StatsSection />
+      <SplashCursor />
+      <LeadershipSection />
+      <LatestProjects />
     </>
   );
 }
