@@ -8,6 +8,7 @@ import StatsSection from "./sections/StatsSection";
 import SplashCursor from "./sections/SplashCursor";
 import LeadershipSection from "./sections/LeadershipSection";
 import LatestProjects from "./sections/LatestProjects";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
       <SplashCursor />
       <LeadershipSection />
       <LatestProjects />
+      <Footer />
     </>
   );
 }

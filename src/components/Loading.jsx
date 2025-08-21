@@ -27,7 +27,7 @@ export default function Loading({
         {text.split("").map((char, i) => (
           <motion.span
             key={i}
-            className="text-green-400"
+            className="text-blue-600"
             style={{ fontSize }}
             initial={{ y: 0 }}
             animate={{ y: [0, -6, 0] }}
