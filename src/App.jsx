@@ -1,47 +1,23 @@
-import React, { useState, useEffect } from "react";
-import Loading from "./components/Loading";
-import Navbar from "./sections/Navbar";
-import HeroSection from "./sections/HeroSection";
-import LeoClub from "./sections/Leoclub";
-import LegacySection from "./sections/LegacySection";
-import StatsSection from "./sections/StatsSection";
-import SplashCursor from "./sections/SplashCursor";
-import LeadershipSection from "./sections/LeadershipSection";
-import LatestProjects from "./sections/LatestProjects";
-import Footer from "./components/Footer";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import Project from "./pages/Project";
+import ProjectDetails from "./pages/ProjectDetails";
+import Contact from "./pages/Contact";
 
 function App() {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    // Simulate data fetching
-    setTimeout(() => setLoading(false), 3000);
-  }, []);
-
-  if (loading) {
-    return (
-      <Loading
-        variant="bouncy-text"
-        fullscreen
-        text="Welcome  to  LEO  Club  of  SLTC"
-        fontSize="2rem"
-      />
-    );
-  }
-
   return (
-    <>
-      <Navbar />
-      <HeroSection />
-      <LeoClub />
-      <LegacySection />
-      <StatsSection />
-      <SplashCursor />
-      <LeadershipSection />
-      <LatestProjects />
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/projects" element={<Project />} />
+        <Route path="/projects/:id" element={<ProjectDetails />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
   );
 }
 

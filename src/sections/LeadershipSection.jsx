@@ -45,17 +45,20 @@ export default function LeadershipSection() {
           transition={{ duration: 0.8 }}
           className="text-left"
         >
-          <span className="px-4 py-1 rounded-full bg-gray-800 text-yellow-400 text-sm font-semibold tracking-wider">
+          <span className="px-4 py-1 rounded-full bg-gray-800 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-green-400 text-sm font-semibold tracking-wider">
             EXECUTIVE BOARD
           </span>
           <h2 className="mt-4 text-4xl md:text-5xl font-bold text-white leading-snug">
-            We Are Leaders Who <span className="text-yellow-400">Work Together!</span>
+            We Are Leaders Who{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-green-400">
+              Work Together!
+            </span>
           </h2>
           <p className="mt-6 text-gray-300 text-lg max-w-xl">
             We believe in youth leadership through service. Our executive team
             guides and empowers Leos to become tomorrow’s leaders—together.
           </p>
-          <button className="mt-8 px-6 py-3 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold rounded-xl shadow-lg transition">
+          <button className="mt-8 px-6 py-3 bg-gradient-to-r from-blue-400 via-cyan-400 to-green-400 hover:opacity-90 text-black font-semibold rounded-xl shadow-lg transition">
             View Our Leadership ↗
           </button>
         </motion.div>
@@ -83,7 +86,7 @@ export default function LeadershipSection() {
               />
               <div className="p-3 text-center">
                 <h3 className="text-white font-semibold">{leader.name}</h3>
-                <span className="inline-block mt-2 px-3 py-1 text-xs font-semibold bg-yellow-400 text-black rounded-full">
+                <span className="inline-block mt-2 px-3 py-1 text-xs font-semibold text-black rounded-full bg-gradient-to-r from-blue-400 via-cyan-400 to-green-400">
                   {leader.role}
                 </span>
               </div>

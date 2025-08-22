@@ -11,7 +11,8 @@ const projects = [
   },
   {
     id: 2,
-    title: "International Mega Club Twinning Project - LEO Tree Plantation Challenge 2025",
+    title:
+      "International Mega Club Twinning Project - LEO Tree Plantation Challenge 2025",
     description:
       "International Mega Twinning Project 🌱🌴 LEO Tree Plantation Challenge 2025...",
     image: "/images/project2.jpg",
@@ -35,7 +36,7 @@ export default function LatestProjects() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="inline-block px-4 py-1 rounded-full text-sm font-semibold bg-gray-800 text-yellow-400 mb-4"
+          className="inline-block px-4 py-1 rounded-full text-sm font-semibold bg-gray-800 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-green-400 mb-4"
         >
           🔴 Live Updates
         </motion.span>
@@ -45,7 +46,7 @@ export default function LatestProjects() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-4xl font-extrabold text-yellow-400 mb-2"
+          className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-green-400 mb-2"
         >
           Latest Projects
         </motion.h2>
@@ -62,7 +63,7 @@ export default function LatestProjects() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
               viewport={{ once: true }}
-              className="bg-gray-900 rounded-2xl overflow-hidden shadow-lg border border-gray-800 hover:shadow-yellow-500/20 hover:scale-105 transition-transform"
+              className="bg-gray-900 rounded-2xl overflow-hidden shadow-lg border border-gray-800 hover:shadow-cyan-400/30 hover:scale-105 transition-transform"
             >
               {/* Image */}
               <div className="relative h-52 w-full overflow-hidden">
@@ -71,20 +72,20 @@ export default function LatestProjects() {
                   alt={project.title}
                   className="w-full h-full object-cover"
                 />
-                <span className="absolute top-3 right-3 bg-yellow-500 text-black text-xs font-bold px-3 py-1 rounded-full">
+                <span className="absolute top-3 right-3 bg-gradient-to-r from-blue-400 via-cyan-400 to-green-400 text-black text-xs font-bold px-3 py-1 rounded-full">
                   NEW
                 </span>
               </div>
 
               {/* Content */}
               <div className="p-5 text-left">
-                <h3 className="text-lg font-bold text-yellow-400 mb-2">
+                <h3 className="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-green-400 mb-2">
                   {project.title}
                 </h3>
                 <p className="text-gray-400 text-sm mb-4 line-clamp-3">
                   {project.description}
                 </p>
-                <button className="inline-flex items-center px-4 py-2 text-sm font-semibold text-white bg-blue-600 rounded-xl hover:bg-blue-700 transition">
+                <button className="inline-flex items-center px-4 py-2 text-sm font-semibold text-black bg-gradient-to-r from-blue-400 via-cyan-400 to-green-400 rounded-xl hover:opacity-90 transition">
                   View Project <ArrowRight size={16} className="ml-2" />
                 </button>
               </div>
@@ -100,7 +101,7 @@ export default function LatestProjects() {
           viewport={{ once: true }}
           className="mt-12"
         >
-          <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-8 py-3 rounded-xl inline-flex items-center shadow-md transition">
+          <button className="bg-gradient-to-r from-blue-400 via-cyan-400 to-green-400 hover:opacity-90 text-black font-bold px-8 py-3 rounded-xl inline-flex items-center shadow-md transition">
             View All Projects <ArrowRight size={18} className="ml-2" />
           </button>
         </motion.div>

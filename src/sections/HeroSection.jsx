@@ -1,7 +1,9 @@
-"use client";
+"use client"; 
 
 import React, { useState, useEffect } from "react";
-import bgImage from "../assets/hero.png"; // 👈 Your background image
+import bgImage from "../assets/hero.png";
+import SplashCursor from "../components/SplashCursor";
+
 
 export default function HeroSection() {
   const sentences = [
@@ -42,10 +44,12 @@ export default function HeroSection() {
   }, [charIndex, isDeleting, sentenceIndex, sentences]);
 
   return (
+    
     <div
       className="relative h-screen w-full bg-cover bg-center"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
+      <SplashCursor />
       {/* Static Welcome Text */}
       <div className="absolute bottom-20 w-full text-center">
         <h1 className="text-3xl md:text-5xl font-bold">
@@ -65,7 +69,7 @@ export default function HeroSection() {
       </div>
 
       {/* Blink animation */}
-      <style jsx>{`
+      <style>{`
         .animate-blink {
           animation: blink 1s step-start infinite;
         }

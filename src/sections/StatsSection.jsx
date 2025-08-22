@@ -7,21 +7,27 @@ import { Hourglass, Layers, DollarSign, Users } from "lucide-react";
 const stats = [
   {
     id: 1,
-    icon: <Hourglass className="w-8 h-8 text-yellow-400" />,
+    icon: (
+      <Hourglass className="w-8 h-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-green-400" />
+    ),
     label: "Total Service Hours",
     value: 22000,
     suffix: "+",
   },
   {
     id: 2,
-    icon: <Layers className="w-8 h-8 text-yellow-400" />,
+    icon: (
+      <Layers className="w-8 h-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-green-400" />
+    ),
     label: "Projects Completed",
     value: 450,
     suffix: "+",
   },
   {
     id: 3,
-    icon: <DollarSign className="w-8 h-8 text-yellow-400" />,
+    icon: (
+      <DollarSign className="w-8 h-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-green-400" />
+    ),
     label: "Project Valuation",
     value: 5000000,
     prefix: "Rs ",
@@ -29,7 +35,9 @@ const stats = [
   },
   {
     id: 4,
-    icon: <Users className="w-8 h-8 text-yellow-400" />,
+    icon: (
+      <Users className="w-8 h-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-green-400" />
+    ),
     label: "Membership",
     value: 3500,
     suffix: "+",
@@ -39,7 +47,7 @@ const stats = [
 export default function StatsSection() {
   const { ref, inView } = useInView({
     triggerOnce: true, // animate only once
-    threshold: 0.2,    // % of section visible before triggering
+    threshold: 0.2, // % of section visible before triggering
   });
 
   return (
@@ -49,7 +57,9 @@ export default function StatsSection() {
     >
       <h2 className="text-3xl md:text-4xl font-bold text-white mb-12">
         Where There’s a Need,{" "}
-        <span className="text-yellow-400">There’s a Leo.</span>
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-green-400">
+          There’s a Leo.
+        </span>
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
@@ -63,7 +73,7 @@ export default function StatsSection() {
           >
             <div className="mb-3">{stat.icon}</div>
             <p className="text-lg text-gray-300 mb-2">{stat.label}</p>
-            <h3 className="text-3xl font-bold text-yellow-400">
+            <h3 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-green-400">
               {stat.prefix}
               {inView && (
                 <CountUp end={stat.value} duration={2.5} separator="," />
@@ -77,7 +87,7 @@ export default function StatsSection() {
                 initial={{ width: 0 }}
                 animate={inView ? { width: "100%" } : { width: 0 }}
                 transition={{ delay: 0.5 + index * 0.2, duration: 1 }}
-                className="h-full bg-gradient-to-r from-yellow-400 to-yellow-200"
+                className="h-full bg-gradient-to-r from-blue-400 via-cyan-400 to-green-400"
               />
             </div>
           </motion.div>

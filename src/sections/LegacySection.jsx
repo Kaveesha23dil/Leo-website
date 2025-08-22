@@ -15,7 +15,9 @@ export default function LegacySection() {
           className="text-4xl md:text-5xl font-bold leading-snug mb-6"
         >
           <span className="text-neon-green">Our Journey Of</span>{" "}
-          <span className="text-yellow-400">Impact & Growth</span>
+          <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-green-400 bg-clip-text text-transparent">
+            Impact & Growth
+          </span>
         </motion.h2>
 
         {/* Description */}
@@ -82,7 +84,8 @@ export default function LegacySection() {
         transition={{ duration: 1 }}
         className="flex justify-center"
       >
-        <div className="w-64 md:w-80"> {/* resized flag here */}
+        <div className="w-64 md:w-80">
+          {/* resized flag here */}
           <img
             src={flagImg}
             alt="Leo Club Flag"
